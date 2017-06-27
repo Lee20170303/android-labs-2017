@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <edu.hzuapps.androidlabs.homework.net1414080903132.SnakeView
+        android:id="@+id/snake"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        tileSize="24" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00005500" >
+        <TextView
+
+            android:id="@+id/text"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+
+            android:gravity="center_horizontal"
+
+            android:text="@string/snake_layout_text_text"
+
+            android:textColor="#ff8888ff"
+
+            android:textSize="24sp"
+
+            android:visibility="visible" />
+    <RelativeLayout
+
+        android:id="@+id/control"
+
+        android:layout_width="300dp"
+
+        android:layout_height="250dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="10dp"
+
+        android:background="#00ffffff" >
+        <Button
+                android:id="@+id/start2"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="困难"
+                android:textColor="#ff8888ff"
+                android:textSize="24sp"
+                android:visibility="visible"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/start1"
+                android:layout_marginBottom="16dp">
+            </Button>
+
+        <Button
+                android:id="@+id/start"
+                android:layout_width="160dp"
+                android:gravity="center_horizontal"
+                android:text="简单"
+                android:textColor="#ff8888ff"
+                android:textSize="24sp"
+                android:visibility="visible"
+                android:layout_height="50dp"
+            android:layout_marginBottom="22dp"
+            android:layout_above="@+id/start1"
+            android:layout_alignStart="@+id/start1">
+            </Button>
+
+        <Button
+            android:id="@+id/start1"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:text="普通"
+            android:textColor="#ff8888ff"
+            android:textSize="24sp"
+            android:visibility="visible"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@+id/start2"
+            android:layout_centerHorizontal="true">
+        </Button>
+
+        <Button
+                android:id="@+id/top"
+
+                android:layout_width="85dp"
+
+                android:layout_height="85dp"
+
+                android:background="@drawable/net1414080903132top"
+
+                android:gravity="center_horizontal"
+
+                android:visibility="visible"
+            android:layout_centerHorizontal="true">
+
+            </Button>
+
+        <Button
+
+            android:id="@+id/bottom"
+
+            android:layout_width="85dp"
+
+            android:layout_height="85dp"
+
+            android:background="@drawable/net1414080903132bottom"
+
+            android:gravity="center_horizontal"
+
+            android:visibility="visible"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/top">
+
+        </Button>
+
+        <Button
+
+            android:id="@+id/left"
+
+            android:layout_width="85dp"
+
+            android:layout_height="85dp"
+
+            android:background="@drawable/net1414080903132left"
+
+            android:gravity="center_horizontal"
+
+            android:visibility="visible"
+            android:layout_alignBottom="@+id/start1"
+            android:layout_alignParentStart="true">
+
+        </Button>
+
+        <Button
+
+            android:id="@+id/right"
+
+            android:layout_width="85dp"
+
+            android:layout_height="85dp"
+
+            android:background="@drawable/net1414080903132right"
+
+            android:gravity="center_horizontal"
+
+            android:visibility="visible"
+            android:layout_alignBottom="@+id/start1"
+            android:layout_alignParentEnd="true">
+
+        </Button>
+    </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>
